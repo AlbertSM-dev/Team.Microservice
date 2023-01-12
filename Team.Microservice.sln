@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team.Microservice.Card.Api", "Team.Microservice.Card.Api\Team.Microservice.Card.Api.csproj", "{F9DD0301-5B0D-4D58-9FA1-C91C9A8004BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Team.Microservice.Card", "Team.Microservice.Card", "{22710046-47C8-4156-9034-D4BED7FE7A1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Team.Microservice.Card.Test", "Team.Microservice.Card.Test", "{5FFE6500-B090-4B09-BB3B-5772560FB429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team.Microservice.Card.Domain", "Team.Microservice.Card.Domain\Team.Microservice.Card.Domain.csproj", "{9B45D687-D455-4282-98FE-BD10C3A247BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team.Microservice.Card.Infrastructure", "Team.Microservice.Card.Infrastructure\Team.Microservice.Card.Infrastructure.csproj", "{9DAC6236-A3E6-4152-BCAD-536CCAF8E5E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9DD0301-5B0D-4D58-9FA1-C91C9A8004BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DD0301-5B0D-4D58-9FA1-C91C9A8004BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DD0301-5B0D-4D58-9FA1-C91C9A8004BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DD0301-5B0D-4D58-9FA1-C91C9A8004BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B45D687-D455-4282-98FE-BD10C3A247BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B45D687-D455-4282-98FE-BD10C3A247BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B45D687-D455-4282-98FE-BD10C3A247BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B45D687-D455-4282-98FE-BD10C3A247BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAC6236-A3E6-4152-BCAD-536CCAF8E5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAC6236-A3E6-4152-BCAD-536CCAF8E5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAC6236-A3E6-4152-BCAD-536CCAF8E5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAC6236-A3E6-4152-BCAD-536CCAF8E5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9DD0301-5B0D-4D58-9FA1-C91C9A8004BB} = {22710046-47C8-4156-9034-D4BED7FE7A1E}
+		{9B45D687-D455-4282-98FE-BD10C3A247BB} = {22710046-47C8-4156-9034-D4BED7FE7A1E}
+		{9DAC6236-A3E6-4152-BCAD-536CCAF8E5E5} = {22710046-47C8-4156-9034-D4BED7FE7A1E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FA6D5B7-3261-431A-A983-5763D511E3D7}
+	EndGlobalSection
+EndGlobal

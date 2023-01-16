@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,15 @@ namespace Team.Microservice.Card.Domain.Services
 {
     public class CardService : ICardService
     {
+        private readonly IMapper _mapper;
+        private readonly ICardRepository _CardRepository;
+
+        public CardService(IMapper mapper, ICardRepository cardRepository)
+        {
+            _mapper = mapper;
+            _cardRepository = productRepository;
+        }
+
         public Task<bool> CreateCardAsync(CardDto Card)
         {
             throw new NotImplementedException();
@@ -22,7 +32,8 @@ namespace Team.Microservice.Card.Domain.Services
 
         public Task<IEnumerable<CardDto>> GetAllCardAsync()
         {
-            throw new NotImplementedException();
+            var result = await _CardRepository.GetAllAsync();
+            return _mapper.Map<IEnumerable<CardDto>>(result);
         }
 
         public Task<CardDto?> GetCardByIdAsync(int id)

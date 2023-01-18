@@ -15,7 +15,7 @@ namespace Team.Microservice.Card.Infrastructure.Context
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
 
-        public DbSet<Card> Cards { get; set; } = null!;
+        public DbSet<Cards> Cards { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -9,7 +9,7 @@ using Team.Microservice.Card.Infrastructure.Interfaces;
 
 namespace Team.Microservice.Card.Infrastructure.Repositories
 {
-    public class CardRepository : Repository<Card>, ICardRepository
+    public class CardRepository : Repository<Cards>, ICardRepository
     {
         public CardRepository(ApplicationDbContext context) : base(context)
         { 

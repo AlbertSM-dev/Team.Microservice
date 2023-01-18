@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Team.Microservice.Card.Domain.Dtos;
+using Team.Microservice.Card.Domain.Interfaces;
 
 namespace Team.Microservice.Card.Api.Controllers
 {
@@ -23,7 +25,7 @@ namespace Team.Microservice.Card.Api.Controllers
         [ProducesResponseType(500)]
         public async Task<ActionResult<IEnumerable<CardDto>>> GetAllCards()
         {
-            var result = await _service.GetAllCardsAsync();
+            var result = await _service.GetAllCardAsync();
 
             if (result.Any()) return Ok(result);
 

@@ -6,18 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Team.Microservice.Card.Domain.Dtos;
 using Team.Microservice.Card.Domain.Interfaces;
+using Team.Microservice.Card.Infrastructure.Interfaces;
+using Team.Microservice.Card.Infrastructure.Context.Entities;
 
 namespace Team.Microservice.Card.Domain.Services
 {
     public class CardService : ICardService
     {
         private readonly IMapper _mapper;
-        private readonly ICardRepository _CardRepository;
+        private readonly ICardRepository _cardRepository;
 
         public CardService(IMapper mapper, ICardRepository cardRepository)
         {
             _mapper = mapper;
-            _cardRepository = productRepository;
+            _cardRepository = cardRepository;
         }
 
         public Task<bool> CreateCardAsync(CardDto Card)
@@ -30,9 +32,9 @@ namespace Team.Microservice.Card.Domain.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<CardDto>> GetAllCardAsync()
+        public async Task<IEnumerable<CardDto>> GetAllCardAsync()
         {
-            var result = await _CardRepository.GetAllAsync();
+            var result = await _cardRepository.GetAllAsync();
             return _mapper.Map<IEnumerable<CardDto>>(result);
         }
 

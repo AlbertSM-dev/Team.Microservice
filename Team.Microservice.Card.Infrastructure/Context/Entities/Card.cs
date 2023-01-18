@@ -9,7 +9,7 @@ using Team.Microservice.Card.Infrastructure.Context.Entities;
 namespace Team.Microservice.Card.Infrastructure.Context.Entities
 {
     [Table("CARD")]
-    public class Card : BaseEntity
+    public class Cards : BaseEntity
     {
         [Column("NAME")]
         public string Name { get; set; } = string.Empty;

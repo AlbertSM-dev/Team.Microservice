@@ -14,4 +14,8 @@
     <PackageReference Include="AutoMapper" Version="12.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Team.Microservice.Card.Infrastructure\Team.Microservice.Card.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
